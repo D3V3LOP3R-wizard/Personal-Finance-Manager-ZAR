@@ -1,0 +1,56 @@
+Features:
+Budget Tracking: Set monthly budgets for each category in Rands
+
+Expense Logging: Track all your expenses with descriptions
+
+Visualizations: See pie charts and bar graphs of your spending
+
+Financial Advice: Get personalized advice based on your spending patterns
+
+Monthly Reports: Detailed breakdowns of your finances
+
+Data Persistence: Automatically saves and loads your data
+
+Savings Tracking: Monitor progress toward your savings goals
+
+How to Use:
+Start by setting your monthly income
+
+Set budget limits for each category
+
+Add expenses as you spend money
+
+Use the menu to:
+
+View summaries
+
+Get financial advice
+
+Generate reports
+
+Update budgets
+
+Visualize your spending
+
+Tips for Financial Management:
+Recommended Budget Allocation (as percentage of income):
+
+Savings: 20%
+
+Groceries: 15-20%
+
+Transportation: 10-15%
+
+Toiletries: 3-5%
+
+Personal Care (Haircuts): 2-5%
+
+Clothing: 5-10%
+
+Other: 5-10%
+
+Save your data regularly - it automatically saves to finance_data.json
+
+Review your spending weekly to stay on track
+
+The software will help me visualize where my money goes each month and provide insights to improve my financial habits...

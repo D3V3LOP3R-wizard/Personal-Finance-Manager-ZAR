@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance Manager | ZAR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- App Container -->
+    <div id="app">
+        <!-- Loading Screen -->
+        <div id="loading-screen" class="loading-screen">
+            <div class="loading-content">
+                <i class="fas fa-money-bill-wave"></i>
+                <h2>Loading Finance Manager</h2>
+                <p>Please wait...</p>
+            </div>
+        </div>
+
+        <!-- Main App (Hidden initially) -->
+        <div id="main-app" style="display: none;">
+            <!-- Header -->
+            <header class="header">
+                <div class="logo">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <h1>Mpho Finance Manager</h1>
+                </div>
+                <button id="add-expense-btn" class="btn btn-primary">
+                    <i class="fas fa-plus"></i> Add Expense
+                </button>
+
+                <button id="reset-btn" class="btn btn-secondary">
+                    <i class="fas fa-redo"></i> Reset Data
+                </button>
+            </header>
+
+            <!-- Dashboard -->
+            <main class="main-content">
+                <div class="summary-cards">
+                    <div class="summary-card">
+                        <h3>Monthly Income</h3>
+                        <p id="income-display">R0</p>
+                    </div>
+                    <div class="summary-card">
+                        <h3>Total Expenses</h3>
+                        <p id="expenses-display">R0</p>
+                    </div>
+                    <div class="summary-card">
+                        <h3>Balance</h3>
+                        <p id="balance-display">R0</p>
+                    </div>
+                </div>
+
+                <div class="expenses-list">
+                    <h3>Recent Expenses</h3>
+                    <div id="expenses-container"></div>
+                </div>
+            </main>
+        </div>
+
+        <!-- Setup Modal -->
+        <div id="setup-modal" class="modal">
+            <div class="modal-content">
+                <h2>Setup Your Profile</h2>
+                <div class="form-group">
+                    <label>Monthly Income (ZAR)</label>
+                    <input type="number" id="income-input" placeholder="R40 000">
+                </div>
+                <button id="save-setup" class="btn btn-primary">Start</button>
+            </div>
+        </div>
+
+        <!-- Add Expense Modal -->
+        <div id="expense-modal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <h2>Add Expense</h2>
+                <div class="form-group">
+                    <label>Amount (ZAR)</label>
+                    <input type="number" id="amount-input" placeholder="100">
+                </div>
+                <div class="form-group">
+                    <label>Category</label>
+                    <select id="category-input">
+                        <option value="groceries">Groceries</option>
+                        <option value="transportation">Transportation</option>
+                        <option value="toiletries">Toiletries</option>
+                        <option value="clothes">Clothes</option>
+                        <option value="haircuts">Hair Cuts</option>
+                        <option value="savings">Savings</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Description</label>
+                    <input type="text" id="description-input" placeholder="What did you spend on?">
+                </div>
+                <div class="modal-buttons">
+                    <button id="cancel-expense" class="btn">Cancel</button>
+                    <button id="save-expense" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Mpho Finance Manager. All rights reserved.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
