@@ -1,10 +1,6 @@
 # Personal-Finance-Manager-ZAR
 My finance assistant manager, tracks monthly expenses, and helps me improve my financial expenditure.
 
-# Personal Finance Manager - ZAR (Rands)
-
-A beautiful, interactive web-based personal finance manager for tracking expenses and budgets in South African Rands.
-
 ## Features
 
 - 📊 **Real-time Dashboard** - See your financial overview at a glance
